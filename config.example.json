@@ -1,22 +1,22 @@
 {
     /* 开源地址: https://github.com/chen310/NeteaseCloudMusicTasks */
-    "version": "2.20",
+    "version": "2.19",
     /* 多账号的配置详见 https://github.com/chen310/NeteaseCloudMusicTasks#%E5%A4%9A%E8%B4%A6%E5%8F%B7 */
     "users": [
         {
             /* 填写手机号或邮箱 */
-            "username": "",
+            "username": "18533753314",
             /* 如果使用非中国大陆的手机号登录则需填写 countrycode，其他情况都不用填写 */
             "countrycode": "",
             /* 填写密码或 32 位 md5 加密后的密码 */
-            "password": "",
-            /* 若都填写了账号密码和 cookie，会优先使用 cookie */
+            "password": "2890330775",
+            /* 若都填写了账号密码和 cookie，优先使用 cookie */
             /* cookie 失效后才会使用账号密码登录 */
-            /* 填写方式详见 https://github.com/chen310/NeteaseCloudMusicTasks#%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81 */
+            /* cookie 的格式为 MUSIC_U=xxxxxxxx; */
             "cookie": "",
             /* 填写国内IP，否则可能会有无法登录等问题出现，多个账号最好设置不同的IP */
             /* 可填写本机IP，查看方法：https://www.ip138.com/ 填写显示的ip即可 */
-            "X-Real-IP": "",
+            "X-Real-IP": "27.189.39.238",
             /* 是否运行该账号的任务 */
             "enable": true
         } 
@@ -37,9 +37,9 @@
             "pushPlus": {
                 "module": "pushPlus",
                 /* 是否启用pushplus微信推送 */
-                "enable": false,
+                "enable": true,
                 /* pushplus的token */
-                "pushToken": "",
+                "pushToken": "79d072972e0649a6b81a7d0807bafead",
                 /* 消息模板:  markdown | html | txt | json */
                 "template": "markdown",
                 /* 群组编码，为空时发给自己 */
@@ -109,7 +109,7 @@
                 "taskName": "发布动态",
                 "module": "publishEvent",
                 /* 是否开启任务 */
-                "enable": false,
+                "enable": true,
                 /* 自定义要分享的歌单id，用逗号隔开，分享时随机选取一个，若为空，则从每日推荐歌单中随机选取 */
                 "id": [],
                 /* 自定义动态内容，用逗号隔开，分享时随机选取一个 */
@@ -174,7 +174,7 @@
                 "taskName": "浏览会员中心",
                 "module": "visitVipCenter",
                 /* 是否开启任务 */
-                "enable": false
+                "enable": true
             }
         },
         /* 音乐人任务，登录音乐人中心默认开启，其他按需开启 */
@@ -189,7 +189,7 @@
             "740004": {
                 "taskName": "发布动态",
                 "module": "publishEvent",
-                "enable": false,
+                "enable": true,
                 /* 自定义要分享的歌单id，用逗号隔开，分享时随机选取一个，若为空，则从每日推荐歌单中随机选取 */
                 "id": [],
                 /* 自定义动态内容，用逗号隔开，分享时随机选取一个 */
@@ -204,9 +204,9 @@
             "755000": {
                 "taskName": "发布主创说",
                 "module": "publishComment",
-                "enable": false,
+                "enable": true,
                 /* []内填写你自己歌曲的id，如有多首用,隔开，随机挑选一首 */
-                "id": [],
+                "id": [1929052379],
                 /* []内填写要发布的内容，如有多个用,隔开，随机挑选一个 */
                 "msg": [
                     "感谢大家收听"
@@ -217,9 +217,9 @@
             "732004": {
                 "taskName": "回复粉丝评论",
                 "module": "replyComment",
-                "enable": false,
+                "enable": true,
                 /* []内填写你自己歌曲的id，如有多首用,隔开，随机挑选一首 */
-                "id": [],
+                "id": [1929052379],
                 /* []内填写要回复的内容，如有多个用,隔开，随机挑选一个 */
                 "msg": [
                     "感谢收听"
@@ -230,9 +230,9 @@
             "755001": {
                 "taskName": "回复粉丝私信",
                 "module": "sendPrivateMsg",
-                "enable": false,
+                "enable": true,
                 /* []内填写粉丝的用户id，如有多个用,隔开，随机挑选一个进行回复 */
-                "id": [],
+                "id": [613174436],
                 /* []内填写要回复的内容，如有多个用,隔开，随机挑选一个 */
                 "msg": [
                     "你好"
@@ -241,12 +241,12 @@
             "739008": {
                 "taskName": "观看课程",
                 "module": "watchCollegeLesson",
-                "enable": false
+                "enable": true
             },
             "740005": {
                 "taskName": "访问自己的云圈",
                 "module": "visitMyCircle",
-                "enable": false,
+                "enable": true,
                 /* 自己的云圈ID，可不填写，如果提示 resourceID 获取失败，则需要手动填写 */
                 "circleId": ""
             },
@@ -274,7 +274,7 @@
             "816": {
                 "taskName": "创建共享歌单",
                 "module": "createSharedPlaylist",
-                "enable": false,
+                "enable": true,
                 /* 自定义歌单名，用逗号隔开，随机选取一个 */
                 "name": [
                     "歌单",
@@ -287,7 +287,7 @@
         /* 打卡刷歌 */
         "daka": {
             /* 是否开启任务 */
-            "enable": false,
+            "enable": true,
             /* 满级时自动停止 */
             "full_stop": true,
             /* 是否开启自动打卡，该模式下song_number和sleep_time参数将失效 */
