@@ -27,9 +27,9 @@
             "serverChan": {
                 "module": "serverChan",
                 /* 是否启用server酱微信推送 */
-                "enable": false,
+                "enable": true,
                 /* 填写server酱旧版SCKEY或新版SendKey */
-                "KEY": "",
+                "KEY": "SCT130263TbsN04v9Jph7DevxpRwDwRdvd",
                 /* 是否将多个账号的信息合并推送 */
                 "merge": true
             },
@@ -37,7 +37,7 @@
             "pushPlus": {
                 "module": "pushPlus",
                 /* 是否启用pushplus微信推送 */
-                "enable": true,
+                "enable": false,
                 /* pushplus的token */
                 "pushToken": "79d072972e0649a6b81a7d0807bafead",
                 /* 消息模板:  markdown | html | txt | json */
